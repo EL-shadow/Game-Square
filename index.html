@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Игра Squares</title>
+    <link rel="stylesheet" type="text/css" href="css/gameSquare.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/library.js"></script>
+    <script type="text/javascript" src="js/gameConfig.js"></script>
+    <script type="text/javascript" src="js/gameSquares.js"></script>
+    <script type="text/javascript" src="js/canvas-render.js"></script>
+    <!--http://javascript.ru/tutorial/events/ondomcontentloaded-->
+	<script src="js/bindReady.js"></script>
+	<script src="js/onReady.js"></script>
+	<script>
+	onReady(function() {
+	  var t1 = reload1();
+	  var t2 = reload2();
+	})
+	</script>
+	<script type="text/javascript" src="js/thisgame.js"></script>
+</head>
+<body>
+<h1 id="header">Игра Squares</h1>
+<div id="game1">Включите JavaScript чтобы поиграть</div>
+<input type="button" onclick="reload1();" value="Перезапустить">
+<hr>
+<div id="game2"></div>
+<input type="button" onclick="reload2();" value="Перезапустить">
+<hr>
+<label>Старый браузер: <input id="oldBrowserCheckBox" type="checkbox" onclick="setOldBrowser();"></label>
+</body>
+</html>
